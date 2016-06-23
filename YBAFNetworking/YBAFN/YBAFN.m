@@ -91,34 +91,7 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         failureBlock(error);
     }];
-    
-    
-    
-//    AFHTTPRequestOperation *fileUploadOp = [manager POST:appendUrlStr parameters:para constructingBodyWithBlock:^(id<AFMultipartFormData> formData){
-//        int j = 0;
-//        for (UIImage *image in imageArray) {
-//            NSData *imgData;
-//            if ([type isEqualToString:@"jpg"]) {
-//                imgData = UIImageJPEGRepresentation(image, 0.3);
-//            } else
-//            {
-//                imgData = UIImagePNGRepresentation(image);
-//            }
-//            [formData appendPartWithFileData:imgData name:[tempSourceNameArr objectAtIndex:j] fileName:[tempFileNameArr objectAtIndex:j] mimeType:mimeTypeStr];
-//            j++;
-//        }
-//    } success:^(AFHTTPRequestOperation *operation, id responseObject) {
-//        successBlock(responseObject);
-//    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-//        failureBlock(error);
-//    }];
-//    //上传进度
-//    [fileUploadOp setUploadProgressBlock:^(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite) {
-//        CGFloat progress = ((float)totalBytesWritten) / totalBytesExpectedToWrite;
-//        progressUp(progress);
-//    }];
-    
-    
+  
 }
 
 

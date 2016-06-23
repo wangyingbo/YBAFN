@@ -56,6 +56,9 @@ typedef void(^LXAlertClickIndexBlock)(NSInteger clickIndex,UIButton *cancelBtn,U
  *  不隐藏，默认为NO。设置为YES时点击按钮alertView不会消失（适合在强制升级时使用）
  */
 @property (nonatomic,assign)BOOL dontDissmiss;
+
+
+
 @end
 
 
